@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Students_LogInActivity"></activity>
-        <activity android:name=".Teachers_LoginActivity"></activity>
-        <activity android:name=".ProfileSActivity"></activity>
-        <activity android:name=".classesActivity"></activity>
-        <activity android:name=".gradeActivity"></activity>
-        <activity android:name=".Teachers"></activity>
+        <activity android:name=".ProfileT_Activity"></activity>
+        <activity android:name=".Students_LogInActivity" />
+        <activity android:name=".Teachers_LoginActivity" />
+        <activity android:name=".ProfileSActivity" />
+        <activity android:name=".classesActivity" />
+        <activity android:name=".gradeActivity" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
