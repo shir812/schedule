@@ -20,7 +20,7 @@ public class Teachers_LoginActivity<Private> extends AppCompatActivity implement
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teachers__login);
 
-        tch_li = findViewById(R.id.teachers);
+       // tch_li = findViewById(R.id.teachers);
 
         tch_name = findViewById(R.id.tch_name);
         tch_pass = findViewById(R.id.tch_pass);

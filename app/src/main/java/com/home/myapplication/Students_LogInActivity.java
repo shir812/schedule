@@ -20,7 +20,7 @@ public class Students_LogInActivity extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students__log_in);
 
-        stu_li = findViewById(R.id.students);
+      //  stu_li = findViewById(R.id.students);
 
         stu_name = findViewById(R.id.stu_name);
         stu_pass = findViewById(R.id.stu_pass);
