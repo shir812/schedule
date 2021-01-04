@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText userName;
     private EditText userPass;
     private Button register;
+    private User_Profile user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this,Students_LogInActivity.class);
             startActivity(intent);
         }
+        if (v== register ){ // register screen
+            Intent intent = new Intent(this,registerActivity.class);
+            startActivity(intent);
         }
+
+    }
+
+
+
+
 
 
 
