@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText userName;
     private EditText userPass;
     private Button register;
-    private User_Profile user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        register = findViewById(R.id.newUser);
         login = findViewById(R.id.enter);
         userName = findViewById(R.id.name);
         userPass = findViewById(R.id.pass);
@@ -32,13 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v){
-        if ( v == login)
+       if ( v == login)
         {
-            Intent intent = new Intent(this,Students_LogInActivity.class);
-            startActivity(intent);
-        }
+           Intent intent = new Intent(this,ClassesActivity.class);
+           startActivity(intent);
+       }
         if (v== register ){ // register screen
-            Intent intent = new Intent(this,registerActivity.class);
+            Intent intent = new Intent(this, RegisterActivity.class);
             startActivity(intent);
         }
 

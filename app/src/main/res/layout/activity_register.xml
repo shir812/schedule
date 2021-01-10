@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".registerActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/welcome2"
@@ -50,7 +50,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/nameuser2"
+        android:id="@+id/username2"
         android:hint="שם משתמש חדש"
         android:paddingLeft="100dp"
         android:layout_gravity="center"

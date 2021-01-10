@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".classesActivity">
+    tools:context=".CoursesActivity">
+
+
+
 
 </LinearLayout>

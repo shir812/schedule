@@ -16,7 +16,7 @@ public class ProfileSActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        stuEnter = findViewById(R.id.enterS);
+        //stuEnter = findViewById(R.id.enterS);
 
     }
 }
