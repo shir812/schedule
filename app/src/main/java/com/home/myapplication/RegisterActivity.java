@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         if (v== register){
-            // convert the edit text to string.
+            // convert the edit text to string
             String namestr = name.getText().toString();
             String laststr = lastname.getText().toString();
             String idstr = id.getText().toString();
