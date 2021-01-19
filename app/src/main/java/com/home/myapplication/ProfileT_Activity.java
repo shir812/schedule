@@ -11,7 +11,7 @@ public class ProfileT_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_t_);
     }
-    // showing the menu
+    // showing the menu!
   //  @Override
     //public boolean onCreateOptionsMenu(Menu menu) {
        // getMenuInflater().inflate(R.menu.menu_main_teacher,menu);
