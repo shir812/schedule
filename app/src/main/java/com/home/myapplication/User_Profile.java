@@ -8,8 +8,16 @@ public class User_Profile {
     private String username;
     private String pass;
 
+    public User_Profile(String name, String lastName, String id, String username, String pass, Boolean isTeacher) { // builder operation
+        this.name = name;
+        this.lastName = lastName;
+        this.id = id;
+        this.username = username;
+        this.pass = pass;
+        this.isTeacher = isTeacher;
+    }
 
-    public void setId(String id) {
+        public void setId(String id) {
         this.id = id;
     }
 
@@ -52,15 +60,6 @@ public class User_Profile {
     public String getPass(){
         return pass;    }
 
-    public User_Profile(String name, String lastName, String id, String username, String pass, Boolean isTeacher){ // builder operation
-        this.name= name;
-        this.lastName= lastName;
-        this.id= id;
-        this.username= username;
-        this.pass = pass;
-        this.isTeacher= isTeacher;
-
-    }
 }
 
 

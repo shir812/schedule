@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
        if ( v == login)
         {
-           Intent intent = new Intent(this,ClassesActivity.class);
+           Intent intent = new Intent(this,CoursesActivity.class);
            startActivity(intent);
        }
         if (v== register ){ // register screen
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
 
 
 

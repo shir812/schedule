@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             String passwordstr = pass.getText().toString();
             Boolean teacher = isteacher.isChecked();
             user = new User_Profile(namestr,laststr,idstr,usernamestr,passwordstr,teacher);
-
+         
             if (teacher) {
                 Intent intent = new Intent(this,ProfileT_Activity.class);
                 startActivity(intent);
