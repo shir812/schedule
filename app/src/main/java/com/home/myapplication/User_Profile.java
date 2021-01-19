@@ -1,5 +1,7 @@
 package com.home.myapplication;
 
+import java.lang.reflect.Array;
+
 public class User_Profile {
     private String id;
     private Boolean isTeacher;
@@ -7,6 +9,7 @@ public class User_Profile {
     private String lastName;
     private String username;
     private String pass;
+   // private Subject[] subArray;
 
     public User_Profile(String name, String lastName, String id, String username, String pass, Boolean isTeacher) { // builder operation
         this.name = name;
@@ -15,9 +18,10 @@ public class User_Profile {
         this.username = username;
         this.pass = pass;
         this.isTeacher = isTeacher;
+        // this.subArray= subArray;
     }
 
-        public void setId(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -39,6 +43,8 @@ public class User_Profile {
         this.pass = pass;
     }
 
+    // public void setSubArray(Subject[] subArray) {this.subArray = subArray;}
+
     public String getId() {
         return id;
     }
@@ -47,9 +53,7 @@ public class User_Profile {
         return lastName;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
     public Boolean getTeacher() {
         return isTeacher;
@@ -57,9 +61,9 @@ public class User_Profile {
 
     public String getUsername() {return username;}
 
-    public String getPass(){
-        return pass;    }
+    public String getPass(){return pass;}
 
+    // public Subject[] getSubArray() {return subArray;}
 }
 
 
