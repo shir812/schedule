@@ -1,6 +1,7 @@
 package com.home.myapplication;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class User_Profile {
     private String id;
@@ -9,7 +10,7 @@ public class User_Profile {
     private String lastName;
     private String username;
     private String pass;
-   // private Subject[] subArray;
+    private ArrayList<Subject> subjects;
 
     public User_Profile(String name, String lastName, String id, String username, String pass, Boolean isTeacher) { // builder operation
         this.name = name;
@@ -18,7 +19,7 @@ public class User_Profile {
         this.username = username;
         this.pass = pass;
         this.isTeacher = isTeacher;
-        // this.subArray= subArray;
+        this.subjects= new ArrayList<Subject>();
     }
 
     public void setId(String id) {

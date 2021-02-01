@@ -1,15 +1,17 @@
 package com.home.myapplication;
 
+import java.util.Date;
+
 public class Tests {
-    private String date; // Date?
+    private Date date;
     private int grade;
 
-    public Tests(String date, int grade){
+    public Tests(Date date, int grade){
         this.date= date;
         this.grade = grade;
     }
 
-    public void setDate(String date){
+    public void setDate(Date date){
         this.date=date;
     }
 
@@ -17,7 +19,7 @@ public class Tests {
         this.grade = grade;
     }
 
-    public String getDate(){
+    public Date getDate(){
         return date;
     }
 

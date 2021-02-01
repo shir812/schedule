@@ -3,9 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/new_strata"
-        android:title="הוספת שכבה"
+        android:id="@+id/new_1"
+        android:titleCondensed="1"
+        android:title="מתמטיקה"
         android:orderInCategory="100"
+        app:showAsAction="never"
+        />
 
-      />
+    <item
+        android:id="@+id/new_2"
+        android:titleCondensed="1"
+        android:title="אנגלית"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+
 </menu>
