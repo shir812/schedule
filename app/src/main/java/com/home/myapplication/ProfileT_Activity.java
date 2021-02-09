@@ -21,6 +21,7 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
     private EditText new_sub;
     private Button create;
     private SharedPreferences sp;
+    private int counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_profile_t_);
         linearLayout= findViewById(R.id.line1);
         sp=getSharedPreferences("details", 0);
-        int counter = sp.getInt("countId",0);
+        counter = sp.getInt("countId",0);
 
     }
     // showing the menu
@@ -69,8 +70,9 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
             b.setText(str);
             b.setOnClickListener(this);
             SharedPreferences.Editor editor = sp.edit();
-            //editor.putInt("counterId", counter++);
-            //b.setId(counter);//??
+            counter++;
+            editor.putInt("counterId", counter);
+            b.setId(counter);
             linearLayout.addView(b);
         }
 
