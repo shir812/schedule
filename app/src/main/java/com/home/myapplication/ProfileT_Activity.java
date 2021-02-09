@@ -4,6 +4,8 @@ import android.app.Dialog;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,15 +17,19 @@ import android.widget.LinearLayout;
 public class ProfileT_Activity extends AppCompatActivity implements View.OnClickListener {
     private LinearLayout linearLayout;
     //dialog
-    Dialog d;
-    EditText new_sub;
-    Button create;
+    private Dialog d;
+    private EditText new_sub;
+    private Button create;
+    private SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_t_);
         linearLayout= findViewById(R.id.line1);
+        sp=getSharedPreferences("details", 0);
+        int counter = sp.getInt("countId",0);
+
     }
     // showing the menu
     @Override
@@ -43,8 +49,8 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
             b.setOnClickListener(this);
             linearLayout.addView(b);
         }
-        if(id == R.id.new_sub){
-            creatNewSubDialog();
+        if(id == R.id.new_2){
+            createNewSubDialog();
 
 
         }
@@ -55,20 +61,23 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         if(v==create)
         {
+
             Button b=new Button(this);
             LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             b.setLayoutParams(layoutParams);
             String str =new_sub.getText().toString();
             b.setText(str);
             b.setOnClickListener(this);
-            b.setId(Integer.parseInt(str));//??
+            SharedPreferences.Editor editor = sp.edit();
+            //editor.putInt("counterId", counter++);
+            //b.setId(counter);//??
             linearLayout.addView(b);
         }
 
     }
 
 
-    public void creatNewSubDialog(){
+    public void createNewSubDialog(){
         d = new Dialog(this);
         d.setContentView(R.layout.activity_profile_t_);
         d.setTitle("מקצוע חדש");
@@ -77,6 +86,8 @@ public class ProfileT_Activity extends AppCompatActivity implements View.OnClick
         create = (Button)d.findViewById(R.id.create);
         create.setOnClickListener(this);
         d.show(); }
-}
+
+
+        }
 
 

@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
            Intent intent = new Intent(this,CoursesActivity.class);
            startActivity(intent);
+           // need to take data from FB
        }
         if (v== register ){ // register screen
             Intent intent = new Intent(this, RegisterActivity.class);

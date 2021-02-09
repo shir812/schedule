@@ -13,7 +13,7 @@
     <item
         android:id="@+id/new_2"
         android:titleCondensed="1"
-        android:title="אנגלית"
+        android:title="הוספת מרחב לימודי"
         android:orderInCategory="100"
         app:showAsAction="never"
         />
